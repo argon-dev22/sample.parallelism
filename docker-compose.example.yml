@@ -2,6 +2,6 @@ services:
   app:
     image: argon/sample.parallelism
     build: .
-    # volumes:
-      # - .:/workspace
-    # command: ["sleep", "infinity"]
+    volumes:
+      - .:/workspace
+    command: ["sleep", "infinity"]
